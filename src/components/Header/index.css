@@ -1,0 +1,87 @@
+/* Write your CSS code here */
+.header-logo {
+  width: 120px;
+}
+.background-header {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+}
+@media screen and (min-width: 576px) {
+  .background-header {
+    display: none;
+  }
+}
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.nav-logout {
+  height: 25px;
+}
+.nav-icons-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 45px;
+  background-color: #e6f6ff;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.background-header-large {
+  display: none;
+}
+@media screen and (min-width: 576px) {
+  .background-header-large {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+    align-self: stretch;
+  }
+}
+.logo-container-large {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: flex-start;
+  align-items: center;
+}
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: roboto;
+  color: #64748b;
+  margin-left: 15px;
+}
+.logout-button {
+  background-color: #0b69ff;
+  color: white;
+  height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+li {
+  list-style-type: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: roboto;
+  color: #64748b;
+  margin-left: 15px;
+}

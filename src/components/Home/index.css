@@ -1,0 +1,91 @@
+/* Write your CSS code here */
+.home-background-small {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+@media screen and (min-width: 576px) {
+  .home-background-small {
+    display: none;
+  }
+}
+.home-image-style {
+  width: 200px;
+}
+@media screen and (min-width: 576px) {
+  .home-image-style {
+    width: 450px;
+  }
+}
+.shop-now-button {
+  background-color: #0967d2;
+  height: 38px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  outline: none;
+  width: 150px;
+  font-family: roboto;
+}
+.heading-style {
+  text-align: center;
+  font-family: Roboto;
+  color: #1e293b;
+  font-size: 30px;
+}
+
+.description-style {
+  color: #64748b;
+  font-family: roboto;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.8;
+}
+@media screen and (min-width: 576px) {
+  .heading-style {
+    font-size: 48px;
+    text-align: left;
+  }
+  .description-style {
+    font-size: 24px;
+    text-align: left;
+  }
+  .shop-now-button {
+    margin-left: 0px;
+  }
+}
+.home-background-large {
+  display: none;
+}
+@media screen and (min-width: 576px) {
+  .home-background-large {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+}
+.description-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 45px;
+}
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 105px;
+}

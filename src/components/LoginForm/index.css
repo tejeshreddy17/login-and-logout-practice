@@ -1,0 +1,121 @@
+/* Write your CSS code here */
+.login-background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 15px;
+  font-family: roboto;
+  height: 100vh;
+}
+@media screen and (min-width: 576px) {
+  .login-background {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+.website-login-image {
+  width: 300px;
+}
+@media screen and (min-width: 576px) {
+  .website-login-image {
+    width: 600px;
+  }
+}
+.logo-small-devices {
+  display: block;
+  width: 250px;
+  margin-bottom: 35px;
+}
+@media screen and (min-width: 576px) {
+  .logo-small-devices {
+    display: none;
+  }
+}
+.logo-large-devices {
+  display: none;
+}
+@media screen and (min-width: 576px) {
+  .logo-large-devices {
+    display: block;
+    width: 250px;
+    margin-bottom: 15px;
+  }
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  width: 100%;
+  min-width: 300px;
+}
+@media screen and (min-width: 576px) {
+  .login-form {
+    width: 400px;
+    justify-content: flex-start;
+    padding-left: 25px;
+    padding-right: 25px;
+    box-shadow: 0px 4px 16px 0px #bfbfbf;
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+}
+.login-input {
+  background-color: #e2e8f0;
+  align-self: stretch;
+  height: 38px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: #64748b;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+.password-input {
+  background-color: #e2e8f0;
+  height: 38px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: #64748b;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  font-weight: 500;
+  align-self: stretch;
+}
+label {
+  align-self: flex-start;
+  margin-bottom: 7px;
+  font-weight: bold;
+  color: #64748b;
+
+  font-size: 14px;
+}
+.login-button {
+  align-self: stretch;
+  background-color: #0967d2;
+  height: 38px;
+
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: roboto;
+  outline: none;
+  margin-left: 0px;
+}
+.error-message {
+  text-align: left;
+  color: #ff0b37;
+  align-self: flex-start;
+  margin-top: 2px;
+}
