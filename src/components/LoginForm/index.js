@@ -1,5 +1,7 @@
 // Write your JS code here
 import {Component} from 'react'
+import {Redirect, withRouter} from 'react-router-dom'
+import Cookies from 'js-cookie'
 
 import './index.css'
 
@@ -14,9 +16,10 @@ class LoginForm extends Component {
     this.setState({password: event.target.value})
   }
 
-  onsubmittingCorrectCredentials = () => {
+  onsubmittingCorrectCredentials = jwtToken => {
     const {history} = this.props
     console.log(history)
+    Cookies.set('jwtToken', jwtToken, {expires: 1})
     history.replace('/')
   }
 
@@ -33,7 +36,7 @@ class LoginForm extends Component {
     const data = await response.json()
     console.log(response)
     if (response.ok === true) {
-      this.onsubmittingCorrectCredentials()
+      this.onsubmittingCorrectCredentials(data.jwt_token)
     } else {
       this.setState({errorMsg: data.error_msg, wrongCredentials: true})
     }
@@ -41,6 +44,10 @@ class LoginForm extends Component {
 
   render() {
     const {wrongCredentials, errorMsg} = this.state
+    const jwtToken = Cookies.get('jwtToken')
+    if (jwtToken !== undefined) {
+      return <Redirect to="/" />
+    }
     return (
       <div className="login-background">
         <img
